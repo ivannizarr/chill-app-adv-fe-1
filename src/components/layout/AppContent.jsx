@@ -17,7 +17,6 @@ const AppContent = () => {
   }, [currentPage]);
 
   const renderPage = () => {
-    console.log('Current page:', currentPage);
     switch (currentPage) {
       case 'login':
         return <Login onNavigate={setCurrentPage} />;

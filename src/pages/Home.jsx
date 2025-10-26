@@ -19,7 +19,6 @@ const Home = ({
   onRemoveFromMyList,
   onPlayMovie
 }) => {
-  // fetch data dari API
   const { groupedMovies } = useMovies();
 
   const handleMovieAction = (movie, action) => {
@@ -31,7 +30,7 @@ const Home = ({
         onRemoveFromMyList(movie.id);
         break;
       default:
-        console.log('Unknown action:', action);
+        break;
     }
   };
 
